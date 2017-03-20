@@ -1,15 +1,16 @@
 {
-  "manifest_version": 2,
-  "name": "Pizza for Piazza",
-  "description": "Piazza is CLEARLY a mispelling of Pizza. Pizza for Piazza corrects this delicious injustice.",
-  "version": "0.1",
-  "content_scripts": [{
-    "matches": [
-      "*://piazza.com/*"
-    ],
-    "js": ["content.js"]
-  }],
-"web_accessible_resources": [
-    "favicon/*.png"
-  ]
+	"manifest_version": 2,
+	"name": "Pizza for Piazza",
+	"description": "Piazza is CLEARLY a mispelling of Pizza. Pizza for Piazza corrects this delicious injustice.",
+	"version": "0.1",
+	"content_scripts": [{
+		"matches": [
+			"*://piazza.com/*"
+	],
+	"js": ["content.js"]
+	}],
+	"web_accessible_resources": [
+		"favicon/*.png"
+	]
+
 }
