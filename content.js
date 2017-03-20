@@ -13,4 +13,4 @@ function change_favicon(img) {
     favicon.setAttribute('href', img);
 }
 
-alert("test")
+change_favicon(chrome.extension.getURL("/favicon/favicon-32x32.png"));
