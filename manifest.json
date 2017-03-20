@@ -8,5 +8,8 @@
       "*://piazza.com/*"
     ],
     "js": ["content.js"]
-  }]
+  }],
+"web_accessible_resources": [
+    "favicon/*.png"
+  ]
 }
