@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Pizza for Piazza",
-  "description": "Piazza is CLEARLY a mispelling of Pizza. Pizza for Piazza brings corrects this delicious injustice."
+  "description": "Piazza is CLEARLY a mispelling of Pizza. Pizza for Piazza brings corrects this delicious injustice.",
   "version": "0.1",
   "content_scripts": [{
     "matches": [
