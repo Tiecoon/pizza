@@ -1,15 +1,20 @@
-/* chrome-extension://<EXTENSION_ID>/image.jpg */
+/* Handles image replacement through injected CSS */
+/* chrome-extension://<EXTENSION_ID>/image.png */
+/* __MSG_@@extension_id__ to get the extension ID */
 
+/* Piazza Careers Logo */
 .student_topbar .navbar-brand {
     background: url(chrome-extension://__MSG_@@extension_id__/img/piazza_careers_logo_white.png) left top no-repeat !important;
     background-size: 156px 21px !important;
 }
 
+/* Piazza Classes Logo */
 .top_bar .logo.class_logo {
     background: url(chrome-extension://__MSG_@@extension_id__/img/piazza_classes_logo_white_new.png) left top no-repeat !important;
     background-size: 156px 18px !important;
 }
 
+/* Piazza Report Logo (Generic Logo possibly used in other locations) */
 #PageLogo a {
     background: url(chrome-extension://__MSG_@@extension_id__/img/piazza-logo-new2.png) no-repeat scroll 30px 5px transparent !important;
 }

@@ -1,5 +1,7 @@
-function change_favicon(img) {
+// Handles favicon and work replacement
 
+// change the favicon
+function change_favicon(img) {
 	var favicon = document.querySelector('link[rel="shortcut icon"]');
 
 	if (!favicon) {
@@ -12,27 +14,18 @@ function change_favicon(img) {
 	favicon.setAttribute('type', 'image/png');
 	favicon.setAttribute('href', img);
 }
-
 change_favicon(chrome.runtime.getURL("/favicon/favicon-32x32.png"));
-
-// chrome.browserAction.onClicked.addListener(walk(document));
-
-// replace title text
-// walk(document.head);
-
-// replace body text
-// walk(document.body);
 
 // replace all text
 walk(document);
 
+// add listener to triggers body text replacement when the DOM changes
 document.addEventListener('DOMNodeInserted', nodeInsertedCallback);
-
 function nodeInsertedCallback(event){
 	walk(document.body);
 }
 
-// Text replacement function
+// Scans the Document
 function walk(node) {
 	// I stole this function from here:
 	// http://is.gd/mwZp7E
@@ -57,6 +50,7 @@ function walk(node) {
 	}
 }
 
+// Replaces Piazza Text
 function handleText(textNode) {
 	var v = textNode.nodeValue;
 
@@ -64,11 +58,4 @@ function handleText(textNode) {
 	v = v.replace(/\bpiazza\b/g, "Pizza");
 
 	textNode.nodeValue = v;
-}
-
-var y = document.getElementsByTagName("span");
-var i;
-for (i = 0; i < y.length; i++) {
-	y[i].innerhtml = y[i].innerHTML.replace(/Piazza/g, "Pizza");
-	y[i].innerhtml = y[i].innerHTML.replace(/piazza/g, "pizza");
 }
