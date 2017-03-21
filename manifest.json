@@ -17,6 +17,7 @@
 		"default_icon": "favicon/favicon-32x32.png"
 	},
 	"icons": {
-		"32": "favicon/favicon-32x32.png"
+		"32": "favicon/favicon-32x32.png",
+		"48": "img/extensionicon.png"
 	}
 }
