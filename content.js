@@ -15,6 +15,8 @@ function change_favicon(img) {
 
 change_favicon(chrome.runtime.getURL("/favicon/favicon-32x32.png"));
 
+// chrome.browserAction.onClicked.addListener(walk(document));
+
 // replace title text
 // walk(document.head);
 
@@ -23,6 +25,12 @@ change_favicon(chrome.runtime.getURL("/favicon/favicon-32x32.png"));
 
 // replace all text
 walk(document);
+
+document.addEventListener('DOMNodeInserted', nodeInsertedCallback);
+
+function nodeInsertedCallback(event){
+	walk(document.body);
+}
 
 // Text replacement function
 function walk(node) {
