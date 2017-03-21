@@ -21,9 +21,9 @@ function convurl(dir) {
 	return test.concat(chrome.runtime.getURL(dir), "')");
 }
 
-document.getElementById("classes_brand").style.backgroundImage = convurl("img/piazza_classes_logo_white_new.png");
+// document.getElementById("classes_brand").style.backgroundImage = convurl("img/piazza_classes_logo_white_new.png");
 // document.getElementsByClassName("navbar-brand pull-left ng-scope").style.backgroundImage = convurl("img/piazza_careers_logo_white.png");
-// document.getElementById("PageLogo").getElementsByTagName("a").style.backgroundImage = convurl("img/")
+// document.getElementById("PageLogo").getElementsByTagName("a").style.backgroundImage = convurl("img/piazza-logo-new2.png")
 walk(document.body);
 
 function walk(node) {
