@@ -15,17 +15,16 @@ function change_favicon(img) {
 
 change_favicon(chrome.runtime.getURL("/favicon/favicon-32x32.png"));
 
-//returns url for background image in appropriate format
-// function convurl(dir) {
-// 	var test = "url('";
-// 	return test.concat(chrome.runtime.getURL(dir), "')");
-// }
+// replace title text
+// walk(document.head);
 
-// document.getElementById("classes_brand").style.backgroundImage = convurl("img/piazza_classes_logo_white_new.png");
-// document.getElementsByClassName("navbar-brand pull-left ng-scope").style.backgroundImage = convurl("img/piazza_careers_logo_white.png");
-// document.getElementById("PageLogo").getElementsByTagName("a").style.backgroundImage = convurl("img/piazza-logo-new2.png")
-walk(document.body);
+// replace body text
+// walk(document.body);
 
+// replace all text
+walk(document);
+
+// Text replacement function
 function walk(node) {
 	// I stole this function from here:
 	// http://is.gd/mwZp7E
