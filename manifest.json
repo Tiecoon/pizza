@@ -3,6 +3,8 @@
 	"name": "Pizza for Piazza",
 	"description": "Piazza is CLEARLY a mispelling of Pizza. Pizza for Piazza corrects this delicious injustice.",
 	"version": "0.1",
+	"author": "Luke Biery and Kevin Zhan",
+	"short_name": "Pizza",
 	"content_scripts": [{
 		"matches": [
 			"*://piazza.com/*"
