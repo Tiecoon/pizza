@@ -16,10 +16,10 @@ function change_favicon(img) {
 change_favicon(chrome.runtime.getURL("/favicon/favicon-32x32.png"));
 
 //returns url for background image in appropriate format
-function convurl(dir) {
-	var test = "url('";
-	return test.concat(chrome.runtime.getURL(dir), "')");
-}
+// function convurl(dir) {
+// 	var test = "url('";
+// 	return test.concat(chrome.runtime.getURL(dir), "')");
+// }
 
 // document.getElementById("classes_brand").style.backgroundImage = convurl("img/piazza_classes_logo_white_new.png");
 // document.getElementsByClassName("navbar-brand pull-left ng-scope").style.backgroundImage = convurl("img/piazza_careers_logo_white.png");
