@@ -17,6 +17,7 @@ change_favicon(chrome.runtime.getURL("/favicon/favicon-32x32.png"));
 
 //"find and replace" only for body probably safer
 document.body.innerHTML = document.body.innerHTML.replace(/Piazza/g, "Pizza");
+document.body.innerHTML = document.body.innerHTML.replace(/piazza/g, "pizza");
 
 //returns url for background image in appropriate format
 function convurl(dir){
