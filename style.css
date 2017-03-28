@@ -18,3 +18,13 @@
 #PageLogo a {
     background: url(chrome-extension://__MSG_@@extension_id__/img/piazza-logo-new2.png) no-repeat scroll 30px 5px transparent !important;
 }
+
+/* Piazza Login Logo */
+#logo-container {
+    float: left !important;
+    background: url(chrome-extension://__MSG_@@extension_id__/img/piazza_logo_white.png) left top no-repeat !important;
+    margin-top: 11px !important;
+    margin-right: 10px !important;
+    width: 101px !important;
+    height: 28px !important;
+}
