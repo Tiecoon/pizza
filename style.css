@@ -28,3 +28,14 @@
     width: 101px !important;
     height: 28px !important;
 }
+
+
+.new_splash .navbar .navbar-brand {
+    background: url(chrome-extension://__MSG_@@extension_id__/img/piazza_logo_blue.png) left top no-repeat !important;
+    margin-right: 0px!important;
+    margin-top: 12px!important;
+    width: 125px!important;
+    height: 30px!important;
+    background-size: 125px auto!important; 
+    margin-left: 0px!important;
+}
